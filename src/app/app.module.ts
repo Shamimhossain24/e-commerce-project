@@ -7,6 +7,7 @@ import { SwiperModule } from 'swiper/angular';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // Import your library
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { ObserversModule } from '@angular/cdk/observers';
 @NgModule({
   declarations: [
     AppComponent
@@ -16,7 +17,8 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     AppRoutingModule,
     SwiperModule,
     BrowserAnimationsModule,
-    SlickCarouselModule
+    SlickCarouselModule,
+    ObserversModule
   ],
   providers: [],
   bootstrap: [AppComponent]

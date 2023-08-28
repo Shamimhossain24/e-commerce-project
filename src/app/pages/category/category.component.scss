@@ -1,0 +1,221 @@
+@import'src/theme/variables';
+.sub-banner-area{
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.sub-banner-main{
+    display: block;
+    background-image: url('../../../assets/images/temp/image/Package incoming.png');
+    padding: 60px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 10;
+    border-radius: 6px;
+}
+.sub-banner-main::after{
+    content: "";
+    background-color: rgb(201 33 39 / 50%);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    border-radius: 6px;
+}
+.sub-banner-main h3{
+    color: #fff;
+    font-family: $font-en-primary;
+    font-style: normal;
+    font-weight: 600;
+    font-size:35px;
+    display: block;
+    margin-bottom: 20px!important;
+}
+.sub-banner-main ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.sub-banner-main ul li{
+    display: inline-block;
+    margin-right: 10px;
+}
+.sub-banner-area ul li a{
+    color: #fff;
+    font-family: $font-en-primary;
+    font-weight: 400;
+    font-size: 18px;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    transition: all 0.3s linear;
+}
+.sub-banner-area ul li a i{
+    font-size: 14px;
+}
+.sub-banner-area ul li a:hover{
+    text-decoration: underline;
+}
+@media(max-width:540px){
+    .sub-banner-area{
+      margin-top: 0px;
+    }
+    .sub-banner-main{
+        border-radius: 0px;
+    }
+    .sub-banner-main::after{
+        border-radius: 0px;
+    }
+    .sub-banner-main h3{
+        font-size: 30px;
+    }
+    .sub-banner-area ul li a{
+        font-size: 16px;
+    }
+}
+/*** section ***/
+.section{
+    display: block;
+    margin-bottom: 50px;
+    width: 100%;
+    padding: 5px 15px;
+    box-sizing: border-box;
+}
+.sections-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    position: relative;
+    margin-bottom: 40px;
+}
+.sections-title-left{
+    width: 100%;
+}
+.sections-title-left h3{
+    display: block;
+    color: $color-primary;
+    font-family: $font-en-primary;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.view-all-link a{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: $color-primary;
+    font-weight: 500;
+    font-size: 17px;
+    font-family:$font-en-primary1;
+    gap: 5px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.view-all-link a i{
+    font-size: 14px;
+}
+.section-main{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+}
+@media(max-width:1200px){
+    .section-main{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media(max-width:997px){
+    .section-main{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .sections-title-left{
+        width: auto;
+        text-align: left;
+    }
+    .view-all-link a{
+        position: relative;
+    }
+}
+@media(max-width:767px){
+    .section-main{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width:600px){
+    .sub-banner-area{
+        margin-bottom: 30px;
+    }
+    .sections-title{
+        margin-bottom:30px;
+    }
+    .sections-title-left h3{
+        font-size: 25px;
+    }
+    .view-all-link a{
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+@media(max-width:440px){
+    .section-main{
+        grid-gap: 15px;
+    }
+}
+
+
+/*** section2 ***/
+.section2{
+    display: block;
+    margin-top: 20px;
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+.section2-main{
+    display: block;
+    background-color: #fbfbfb;
+    padding: 30px 30px;
+    box-sizing: border-box;
+}
+.section2-left h3{
+    color: $color-black;
+    font-family: $font-en-primary;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    max-width: 320px;
+    width: 100%;
+    margin-bottom: 20px!important;
+    line-height: 30px;
+}
+.section2-left button{
+    background-color: #e61043;
+    font-family: $font-en-primary;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    padding: 8px 12px;
+    max-width: 150px;
+    width: 100%;
+    border: 1px solid transparent;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+@media(max-width:500px){
+    .section2-main{
+        padding: 20px;
+    }
+}

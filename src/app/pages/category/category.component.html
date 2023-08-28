@@ -1,0 +1,48 @@
+<!---sub-banner-area-->
+<div class="sub-banner-area">
+    <div class="container">
+        <div class="sub-banner-main">
+            <h3>All Categories</h3>
+                <ul>
+                    <li><a href="#">Home <i class="fa fa-angle-right"></i></a></li>
+                    <li><a href="#">All Category</a></li>
+                </ul>
+        </div>
+    </div>
+</div>
+
+<!---section1-->
+<div class="section" *ngFor="let category of  categoryData" [id]="category?._id">
+    <div class="container">
+        <!---sections-title-->
+        <div class="sections-title">
+             <div class="sections-title-left">
+                 <h3>{{category?.categoryName}} </h3>
+             </div>
+             <div class="view-all-link">
+                 <a routerLink="../main-category">View All Products <i class="fa fa-angle-right"></i></a>
+             </div>
+        </div><!---end-->
+        <div class="section-main">
+            <!---category-card  -->
+            <app-category-card [data]="data" *ngFor="let data of category?.subCategory"></app-category-card>
+        </div>
+
+    </div>
+</div>
+
+
+<!---section2-->
+<div class="section2">
+     <div class="container">
+         <div class="section2-main">
+              <div class="section2-left">
+                <h3>Refer Red Grocer & Earn Exciting Rewards</h3>
+                <button>Refer</button>
+              </div>
+              <div class="section2-right">
+
+              </div>
+         </div>
+     </div>
+</div>

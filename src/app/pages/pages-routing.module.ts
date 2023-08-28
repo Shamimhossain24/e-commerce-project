@@ -39,8 +39,40 @@ const routes: Routes = [
       {
         path:"reset-password",
         loadChildren: () => import('./user/reset-password/reset-password.module').then(m => m.ResetPasswordModule)
+      },
+           {
+        path: "category",
+        loadChildren: () => import('./category/category.module').then(m => m.CategoryModule)
+      },
+      {
+        path: "sub-category",
+        loadChildren: () => import('./sub-category/sub-category.module').then(m => m.SubCategoryModule)
+      },
+      {
+        path:"account",
+        loadChildren: () => import('./user/account/account.module').then(m => m.AccountModule)
+      },
+      {
+        path:"cart",
+        loadChildren: () => import('./user/cart/cart.module').then(m => m.CartModule)
+      },
+      {
+        path:"checkout",
+        loadChildren: () => import('./user/checkout/checkout.module').then(m => m.CheckoutModule)
+      },
+      {
+        path:"order-confirm",
+        loadChildren: () => import('./user/order-confirmation/order-confirmation.module').then(m => m.OrderConfirmationModule)
+      },
+      {
+        path:"wishlist",
+        loadChildren : () => import('./wishlist-page/wishlist-page.module').then((m) => {return m.WishlistPageModule})
+      },
+      {
+        path:"compare-list",
+        loadChildren: () => import('./compare-list/compare-list.module').then((m) => { return m.CompareListModule})
       }
-     
+      
     ]
   }
 ];

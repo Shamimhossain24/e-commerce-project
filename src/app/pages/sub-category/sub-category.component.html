@@ -1,0 +1,29 @@
+<!---sub-banner-area-->
+<div class="sub-banner-area">
+    <div class="container">
+        <div class="sub-banner-main">
+            <h3>Rice</h3>
+                <ul>
+                    <li><a href="#">Home <i class="fa fa-angle-right"></i></a></li>
+                    <li><a href="#">Rice</a></li>
+                </ul>
+        </div>
+    </div>
+</div>
+<!---offer-banner-->
+<div class="category-banner">
+    <div class="container">
+        <div class="offer-img">
+             <img src="./assets/images/temp/image/Chal@2x.png" alt="">
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="container">
+        <!---section4-main-area-->
+        <div class="section-main">
+            <app-product-card-one [product]="product"  *ngFor="let product of products"></app-product-card-one>
+        </div>
+    </div>
+</div>
